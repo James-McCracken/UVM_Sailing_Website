@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Hover Image</title>
+
+</head>
+<body>
+
+    <p onmouseover="showImage">
+         Here is an Image:
+    </p>
+
+    "<img src=Images/facebook.png >
+
+<script>
+    /*function testScript(x){
+     print("<img src=Images/facebook.png >");
+     }*/
+
+    /*var c = document.getElementById("fullPageCanvas");
+    var ctx = c.getContext("2d");
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    //*/
+/*
+
+    ctx.beginPath();
+    ctx.arc(xUpdate, yUpdate(), 100, 0, 2 * Math.PI);
+    //ctx.fillStyle("green")
+    //ctx.fill()
+    ctx.fill();
+*/
+
+    //
+    //
+    //
+    //
+    function yUpdate() {
+        var y = event.clientY;
+        return y;
+    }
+
+    function xUpdate() {
+        var x = event.clientX;
+        return x;
+    }
+
+
+
+    function showImage() {
+        /* var c = document.getElementById("fullPageCanvas");*/
+        /*var ctx = c.getContext("2d");
+        c.width = window.innerWidth;
+        c.height = window.innerHeight;*/
+
+        var x = xUpdate();
+        var y = yUpdate();
+
+        document.getElementById("test")
+        //print image at mouse x,y
+        //var printWindow = window.open('', 'Print Window Name', 'height = 200,width = 200');
+        /*
+        ctx.beginPath();
+        ctx.arc(x, y, 100, 0, 2 * Math.PI);
+        //ctx.fillStyle("green")
+        //ctx.fill()
+        ctx.fill();*/
+    }
+
+</script>
+</body>
+</html>
