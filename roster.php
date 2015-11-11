@@ -64,10 +64,8 @@ if ($file) {
 } // ends if file was opened
 
 
-print('<h1>Roster: For  the 2015 - 2016 season</h1>');
+print('<img class = teamPhoto src="Images/UVM2015Team.jpg" alt="">');
 
-
-/*print('<img class = teamPhoto src="Images/UVM2015Team.jpg" alt="">');*/
 
 
 print('<div class = "'. 'bodyColor ' . 'container' .'">');
@@ -81,10 +79,14 @@ print('<table class = "'.'textCenter' .'" align = "center">');
         print('<th>High School</th>');
     print('</tr>');
 foreach ($records as $oneRecord) {
+    /*$name = $oneRecord[0];*/
     if ($oneRecord[0] != "") {  //the eof would be a ""
         print "\n";
         print("<tr><td>" . $oneRecord[0] . "</td><td>" . $oneRecord[1] . "</td><td>" . $oneRecord[2] . "</td><td>" . $oneRecord[3] . "</td></tr>");
         print "\n";
+
+        //print headshot image
+       /* print('<img class = 'headshot'> /Images/Headshots/$onerecord.png</img>');*/
     }
 }
 print ("</table>");
