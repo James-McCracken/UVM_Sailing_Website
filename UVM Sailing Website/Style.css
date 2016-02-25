@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.fullPageContainer {
+    display: -webkit-flex;      /* NEW - Chrome */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+
+
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: url(Images/Background.JPG) top, center, fixed, repeat-y;
+    background-attachment: fixed; /*NEEDED AND DON"T KNOW WHY?!!?!*/
+    background-size: cover;
+    /*background-image: url(image1.JPG);*/
+    /*background-size: 100%;*/
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 4em;
+/*    padding-top: 6%;
+    padding-bottom: 6%;*/
+}
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4em;
+}
+h1{
+    font-size: 3em;
+}
+
+.alignAsColumn{
+    flex-direction: column;
+
+}
+.alignAsRow{
+    flex-direction: row;
+}
+
+nav {
+    /*position: fixed;*/
+    /*min-width: 1000px;*/
+    opacity: 0.9;
+    border-radius: .4em;
+    width: 90%;
+    margin-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+/*    padding-top: 2.1%;
+    padding-bottom: 2.1%;*/
+    background-color: #c8c8c8;/*
+    background-color: #757575;*/
+    height: 3em;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+/*nav ul li+li:before{
+    align-self: center;
+    content: '|';
+    display: inline-block;
+}*/
+
+
+
+nav a{
+    display: block;
+    padding: .5em;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    color: #005610;
+}
+
+.navLinksList{
+}
+
+.navSocialMedia{
+    padding: auto;
+}
+
+.socialMediaIcon{
+
+    padding: 0;
+    margin-top: .2em;
+}
+/*END Navigation Bar*/
+
+
+
+/*For Links*/
+a:link{
+    text-decoration: none;
+    font-size: 125%;
+}
+
+/*a:visited{
+
+}*/
+
+a:hover{
+    color: #005610;
+    opacity: 0.7;
+    background-color: #EDBB14;
+
+}
+/*
+
+a:active{
+}
+
+*/
+
+
+.bodyColor{
+/*    margin: auto;
+    min-width: 700px;*/
+    border-radius: .4em;
+    width: 50%;
+    background-color: #e6e6e6;
+    opacity: 0.87;
+    border: .2em;
+    color: #005610;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    /*005610*/
+    /*EDBB14*/
+}
+.tableBodyColor{
+    /*    margin: auto;
+        min-width: 700px;*/
+    border-radius: .4em;
+    background-color: #e6e6e6;
+    opacity: 0.87;
+    border: .2em;
+    color: #005610;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    /*005610*/
+    /*EDBB14*/
+}
+p{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 120%;
+    color: #005610;
+}
+
+h2{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 180%;
+}
+
+h3{
+    font-size: 130%;
+}
+
+
+/*Table CSS*/
+
+table, th, td {
+    border: 1px solid black;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 110%;
+    color: #005610;
+}
+
+table{
+
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+tbody{
+    align-self: center;
+}
+
+
+.teamPhoto {
+    display: flex;
+    align-items: center;
+    width: 53em;
+    height: 35em;
+    border: .2em solid grey;
+}
+
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+
+}
+.textCenter{
+    text-align: center;
+}
+
+/*FORM CSS*/
+
+.formBodyColor{
+    border-radius: .4em;
+    width: 35%;
+    background-color: #e6e6e6;
+    opacity: 0.87;
+    border: .2em;
+    color: #005610;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+form{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 110%;
+    color: #005610;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.formItem{
+    text-align: center;
+    width: 90%;
+    display: inline-block;
+    padding: .5em;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    color: #005610;
+}
+
+
+.headShot{
+    display: none;
+    width:20em;
+    height:20em;
+    position:fixed;
+    top:20em;
+    left:2.6em;
+    opacity: 1.00;
+    border: groove .1em black;
+    border-radius: .2em;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!MEDIA QUERIES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*
+@media all and (max-width: 600px) {
+    .fullPageContainer{
+        background-image: none;
+        /!* For Safari 5.1 to 6.0 *!/
+        background: -webkit-linear-gradient(#005610,#EDBB14);
+        /!* For Opera 11.6 to 12.0 *!/
+        background: -o-linear-gradient(#005610,#EDBB14);
+        /!* For Firefox 3.6 to 15 *!/
+        background: -moz-linear-gradient(#005610,#EDBB14);
+        /!* Standard syntax *!/
+        background: linear-gradient(#005610,#EDBB14);
+    }
+    .container {
+        /!* On small screens, we are no longer using row direction but column *!/
+        flex-direction: column;
+        padding-bottom: 5em;
+    }
+
+    nav.container{
+
+        flex-direction: column;
+        padding-bottom: 17em;
+        padding-top: .3em;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navLinksList{
+        padding: 0;
+        margin: 0;
+    }
+    .navSocialMedia{
+        margin: auto;
+        padding-left: 0;
+    }
+    .bodyColor {
+        width: 95%
+    }
+}
+
+
+*/
+@-ms-viewport{
+    width: device-width;
+}
